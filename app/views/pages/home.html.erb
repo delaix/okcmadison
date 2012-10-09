@@ -1,9 +1,8 @@
 <div class="container">
     <div class="span-24 style=margin-bottom:10px;">
       <%= image_tag "logo.png" %>
-      <div class="span-24" style="background:#F80000; ; margin-bottom:10px; margin-top:0px; \
-      border-right: 3px solid #000000; border-bottom: 3px solid #000000;">
-        &nbsp;
+      <div class="span-24" style="background:#F80000; ; margin-bottom:10px; margin-top:0px;border-right: 2px solid #000000; border-bottom: 3px solid #000000;text-align:right;color:#f3b921;">
+        <%= @location %>&nbsp;
       </div>
     </div>
     <div class="span-6">
@@ -22,7 +21,7 @@
       <p>
         <b>Complete karate training:</b>
           <ul>
-            <li>Kata/forms</li>
+            <li>kata/forms</li>
             <li>self-defense</li>
             <li>Okinawan weapons (kobudo)</li>
             <li>overall fitness and conditioning</li>
@@ -53,11 +52,11 @@
           "http://www.okinawankarateclub.com/Ann_Arbor_Karate/index.htm" %>
           </li>
           <li>
-            <%= link_to "Okinawan Karate Club of Dallas (Ilene Smoger, Sensei)",
+            <%= link_to "Okinawan Karate Club of Dallas (Ilene Smoger Sensei)",
               "http://www.okinawankarateclub.com/" %>
           </li>
           <li>
-            <%= link_to "Okinawan Karate Club of Atlanta (Tim Kelly, Sensei)",
+            <%= link_to "Okinawan Karate Club of Atlanta (Tim Kelly Sensei)",
               "http://www.atlantaokinawankarate.com/atlanta_martial_arts.htm" %>
           </li>
           <li>
@@ -80,6 +79,13 @@
     </div>
     <div class="span-24" style="margin-top:19px;">
       <hr/>
-      <small>artwork courtesy of <%= link_to "Deb Lee", "http://www.webdeblee.com" %></small>
+        <div class="span-18 last">
+          <small>
+            artwork courtesy of <%= link_to "Deb Lee", "http://www.webdeblee.com" %>
+          </small>
+        </div>
+        <div class="span-6 last">
+          <small>© Okinawan Karate Club of Madison</small>
+        </div>
     </div>
 </div>

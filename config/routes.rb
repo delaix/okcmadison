@@ -1,9 +1,11 @@
 Okcmadison::Application.routes.draw do
   get "pages/home"
+  
+  root :to => 'pages#home'
 
-  get "pages/about"
+  # get "pages/about"
 
-  get "pages/classes"
+  # get "pages/classes"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
