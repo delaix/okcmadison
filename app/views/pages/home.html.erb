@@ -1,98 +1,81 @@
-<div class="container">
-    <div class="span-24 style=margin-bottom:10px;">
-      <%= image_tag "logo.png" %>
-      <div class="span-24" style="background:#F80000; ; margin-bottom:10px; margin-top:0px;border-right: 2px solid #000000; border-bottom: 3px solid #000000;text-align:right;color:#f3b921;">
-        <%= @location %>&nbsp;
-      </div>
-    </div>
-    <div class="span-6">
-      <%= image_tag "karateka.png" %>
-    </div>
-    <div class="span-11" style="background:#CFCFCF;padding:1em;">
-      <h3><b>The Okinawan Karate Club of Madison</b></h3>
-      <h4><b>Martial arts training for adults and mature teens</b></h4>
-      <p>
-        <b>The Okinawan Karate Club of Madison</b> teaches traditional Okinawan Shorin Ryu
-        karate as taught by <%= link_to "Eizo Shimabukuro O'Sensei", 
-        "http://www.usadojo.com/biographies/eizo-shimabukuro.htm" %> and Okinawan Shudokan
-        karate as taught by the late <%= link_to "Walter Todd Sensei",
-        "http://www.koryu.com/library/mskoss10.html" %>.
-      </p>
-      <p>
-        <b>Complete karate training:</b>
-          <ul>
-            <li>kata/forms</li>
-            <li>self-defense</li>
-            <li>Okinawan weapons (kobudo)</li>
-            <li>overall fitness and conditioning</li>
-          </ul>
-        </p>
-      <p>
-        There are many benefits to karate training. As a dedicated student you can
-        <ul>
-          <li>improve strength and indurance</li>
-          <li>develop better posture</li>
-          <li>enhance focus and self discipline</li>
-          <li>build confidence</li>
-        </ul>
-      </p>
-      <p>
-        <i>Classes starting soon!</i> If you would like more information on about training
-        please send email to <a href='&#109;ai&#108;&#116;o&#58;%69n%&#54;6&#111;&#64;%6&#70;kc%6D&#97;di%&#55;3&#37;6&#70;n&#37;2E&#99;o%6D'>info&#64;o&#107;cmad&#105;son&#46;com</a>.
-      </p>
-    </div>
-    <div class="span-6 last">
-        <big>Instructor:</big>
-        <hr/>
-        <%= image_tag "sensei.png", :size => "115x153" %>
-        <p>
-          <b>Andrew de Laix Sensei</b> holds the rank of Shodan in the Shobayashi Ryu and Shudokan 
-          styles of karate. He is committed to teaching karate in the Okinawan tradition
-          as a life preserving art.
-        </p>
-        <big>Affiliated Dojos</big>
-        <hr/>
-        <ul class="links" style="list-style-type:none;">
-          <li>
-            <%= link_to "Okinawan Karate Club of Ann Arbor \
-(Barb Christensen Sensei & Chief Instructor of the Okinawan Karate Clubs)",
-          "http://www.okinawankarateclub.com/Ann_Arbor_Karate/index.htm" %>
-          </li>
-          <li>
-            <%= link_to "Okinawan Karate Club of Dallas (Ilene Smoger Sensei)",
-              "http://www.okinawankarateclub.com/" %>
-          </li>
-          <li>
-            <%= link_to "Okinawan Karate Club of Atlanta (Tim Kelly Sensei)",
-              "http://www.atlantaokinawankarate.com/atlanta_martial_arts.htm" %>
-          </li>
-          <li>
-            <%= link_to "Okinawan Karate Club of Arlington (Jackie Pinson Sensei)",
-              "http://www.okinawankaratearlington.com/" %>
-          </li>
-          <li>
-            <%= link_to "Okinawan Karate Club of Latana (Wayne Murphy Sensei)",
-              "http://www.okinawankarateclub.com/Latana_Karate/index.htm" %>
-          </li>
-          <li>
-            <%= link_to "Okinawan Karate Club of San Francisco (Michele Elefante Sensei)",
-              "http://okinawankaratesanfrancisco.com" %>
-          </li>
-          <li>
-            <%= link_to "Okinawan Karate Club of Sacremento (Michele Elefante Sensei)",
-              "http://karatesacramento.com/" %>
-          </li>
-        </ul>
-    </div>
-    <div class="span-24" style="margin-top:19px;">
-      <hr/>
-        <div class="span-18 last">
-          <small>
-            artwork courtesy of <%= link_to "Deb Lee", "http://www.webdeblee.com" %>
-          </small>
-        </div>
-        <div class="span-6 last">
-          <small>© Okinawan Karate Club of Madison</small>
-        </div>
-    </div>
+<%= render "layouts/header" %>
+<div class="span-6">
+  <%= image_tag "karateka.png" %>
 </div>
+<div class="span-11" style="background:#CFCFCF;padding:1em;">
+  <h3><b>The Okinawan Karate Club of Madison</b></h3>
+  <h4><b>Martial arts training for adults and mature teens</b></h4>
+  <p>
+    <b>The Okinawan Karate Club of Madison</b> teaches traditional Okinawan Shorin Ryu
+    karate as taught by <%= link_to "Eizo Shimabukuro O'Sensei", 
+    "http://www.usadojo.com/biographies/eizo-shimabukuro.htm" %> and Okinawan Shudokan
+    karate as taught by the late <%= link_to "Walter Todd Sensei",
+    "http://www.koryu.com/library/mskoss10.html" %>.
+  </p>
+  <p>
+    <b>Complete karate training:</b>
+      <ul>
+        <li>forms (kata)</li>
+        <li>self-defense</li>
+        <li>Okinawan weapons (kobudo)</li>
+        <li>overall fitness and conditioning</li>
+      </ul>
+    </p>
+  <p>
+    There are many benefits to karate training. As a dedicated student you can
+    <ul>
+      <li>improve strength and indurance</li>
+      <li>develop better posture</li>
+      <li>enhance focus and self discipline</li>
+      <li>build confidence</li>
+    </ul>
+  </p>
+  <p>
+    <i>Classes starting soon!</i> If you would like more information on about training
+    please send e-mail to <a href='&#109;ai&#108;&#116;o&#58;%69n%&#54;6&#111;&#64;%6&#70;kc%6D&#97;di%&#55;3&#37;6&#70;n&#37;2E&#99;o%6D'>info&#64;o&#107;cmad&#105;son&#46;com</a>.
+  </p>
+</div>
+<div class="span-6 last">
+    <big>Instructor:</big>
+    <hr/>
+    <%= image_tag "sensei.png", :size => "115x153" %>
+    <p>
+      <b>Andrew de Laix Sensei</b> holds the rank of Shodan in the Shobayashi Ryu and Shudokan 
+      styles of karate. He is committed to teaching karate in the Okinawan tradition
+      as a life preserving art.
+    </p>
+    <big>Affiliated Dojos</big>
+    <hr/>
+    <ul class="links" style="list-style-type:none;">
+      <li>
+        <%= link_to "Okinawan Karate Club of Ann Arbor \
+(Barb Christensen Sensei & Chief Instructor of the Okinawan Karate Clubs)",
+      "http://www.okinawankarateclub.com/Ann_Arbor_Karate/index.htm" %>
+      </li>
+      <li>
+        <%= link_to "Okinawan Karate Club of Dallas (Ilene Smoger Sensei)",
+          "http://www.okinawankarateclub.com/" %>
+      </li>
+      <li>
+        <%= link_to "Okinawan Karate Club of Atlanta (Tim Kelly Sensei)",
+          "http://www.atlantaokinawankarate.com/atlanta_martial_arts.htm" %>
+      </li>
+      <li>
+        <%= link_to "Okinawan Karate Club of Arlington (Jackie Pinson Sensei)",
+          "http://www.okinawankaratearlington.com/" %>
+      </li>
+      <li>
+        <%= link_to "Okinawan Karate Club of Latana (Wayne Murphy Sensei)",
+          "http://www.okinawankarateclub.com/Latana_Karate/index.htm" %>
+      </li>
+      <li>
+        <%= link_to "Okinawan Karate Club of San Francisco (Michele Elefante Sensei)",
+          "http://okinawankaratesanfrancisco.com" %>
+      </li>
+      <li>
+        <%= link_to "Okinawan Karate Club of Sacremento (Michele Elefante Sensei)",
+          "http://karatesacramento.com/" %>
+      </li>
+    </ul>
+</div>
+<%= render "layouts/footer" %>
