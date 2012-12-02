@@ -5,3 +5,17 @@
 ul.links li {
   margin-bottom: 5px
 }
+
+table.leftlinks {
+  border-collapse:collapse;
+}
+
+table.leftlinks td {
+  background:#CFCFCF;
+  border: 1px solid #000000;
+  border-left: 5px solid #F80000;
+}
+
+table.leftlinks tr:nth-child(even) td {
+  background:#CFCFCF;
+}
