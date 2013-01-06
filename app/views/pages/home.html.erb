@@ -29,8 +29,8 @@
     </ul>
   </p>
   <p>
-    <i>Classes starting soon!</i> If you would like more information about training,
-    please send e-mail to <a href='&#109;ai&#108;&#116;o&#58;%69n%&#54;6&#111;&#64;%6&#70;kc%6D&#97;di%&#55;3&#37;6&#70;n&#37;2E&#99;o%6D'>info&#64;o&#107;cmad&#105;son&#46;com</a>.
+    <%= link_to 'Classes begin January 23rd', :pages_classes %>. If you would like more information about training,
+    please send e-mail to <%= render "layouts/email" %>.
   </p>
 </div>
 <div class="span-6 last">
@@ -41,6 +41,11 @@
       <b>Andrew de Laix Sensei</b> holds the rank of Shodan in the Shobayashi Ryu and Shudokan 
       styles of karate. He is committed to teaching karate in the Okinawan tradition
       as a life-preserving art.
+    </p>
+    <big>Contact</big>
+    <hr/>
+    <p>
+    <%= render "layouts/email" %>
     </p>
     <big>Affiliated Dojos</big>
     <hr/>
