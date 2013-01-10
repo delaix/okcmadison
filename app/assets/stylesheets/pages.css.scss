@@ -19,3 +19,11 @@ table.leftlinks td {
 table.leftlinks tr:nth-child(even) td {
   background:#CFCFCF;
 }
+
+hsidebar {
+  font-size: 125%;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
