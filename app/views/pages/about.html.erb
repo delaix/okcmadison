@@ -29,13 +29,41 @@
     </p>
 </div>
 <div class="span-6 last">
-  <hsidebar>Social</hsidebar>
-  <p>
-    <%= link_to image_tag( "facebook.png", :width => '150'), "http://www.facebook.com/okcmadison" %>
-  </p>
   <hsidebar>Contact</hsidebar>
   <p>
     <%= render "layouts/email" %>
   </p>
+    <hsidebar>Affiliated Dojos</hsidebar>
+    <ul class="links" style="list-style-type:none;">
+      <li>
+        <%= link_to "Okinawan Karate Club of Ann Arbor \
+(Barb Christensen Sensei & Chief Instructor of the Okinawan Karate Clubs)",
+      "http://www.okinawankarateclub.com/Ann_Arbor_Karate/index.htm" %>
+      </li>
+      <li>
+        <%= link_to "Okinawan Karate Club of Dallas (Ilene Smoger Sensei)",
+          "http://www.okinawankarateclub.com/" %>
+      </li>
+      <li>
+        <%= link_to "Okinawan Karate Club of Atlanta (Tim Kelly Sensei)",
+          "http://www.atlantaokinawankarate.com/atlanta_martial_arts.htm" %>
+      </li>
+      <li>
+        <%= link_to "Okinawan Karate Club of Arlington (Jackie Pinson Sensei)",
+          "http://www.okinawankaratearlington.com/" %>
+      </li>
+      <li>
+        <%= link_to "Okinawan Karate Club of Latana (Wayne Murphy Sensei)",
+          "http://www.okinawankarateclub.com/Latana_Karate/index.htm" %>
+      </li>
+      <li>
+        <%= link_to "Okinawan Karate Club of San Francisco (Michele Elefante Sensei)",
+          "http://okinawankaratesanfrancisco.com" %>
+      </li>
+      <li>
+        <%= link_to "Okinawan Karate Club of Sacremento (Michele Elefante Sensei)",
+          "http://karatesacramento.com/" %>
+      </li>
+    </ul>
 </div>
 <%= render "layouts/footer" %>
