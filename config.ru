@@ -2,3 +2,7 @@
 
 require ::File.expand_path('../config/environment',  __FILE__)
 run Okcmadison::Application
+
+require 'rack-block-semalt'
+use Rack::BlockSemalt
+
