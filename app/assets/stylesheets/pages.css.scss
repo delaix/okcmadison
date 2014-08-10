@@ -27,3 +27,44 @@ hsidebar {
   margin-bottom: 10px;
   border-bottom: 1px solid gray;
 }
+
+.black_overlay{
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index:1001;
+  -moz-opacity: 0.8;
+  opacity:.80;
+  filter: alpha(opacity=80);
+}
+ 
+.white_content {
+  display: none;
+  position: fixed;
+  top: 25%;
+  margin-left:190px;
+  width: 600px;
+  height: 300px;
+  padding: 16px;
+  border: 16px solid #F4A700;
+  background-color: #FFFF80;
+  z-index:1002;
+  overflow: hidden;
+}
+
+.link_button, .white_content a {
+  font: bold 14px Arial;
+  text-decoration: none;
+  background-color: #F80000;
+  color: #F4A700;
+  padding: 6px 8px 6px 8px;
+  border-radius: 5px;
+}
+
+.link_button:hover, .white_content a:hover  {
+  color: white;
+}
