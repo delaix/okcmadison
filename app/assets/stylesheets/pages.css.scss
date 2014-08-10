@@ -56,7 +56,7 @@ hsidebar {
   overflow: hidden;
 }
 
-.link_button, .white_content a {
+.link_button, .white_content a, .make_button_link a {
   font: bold 14px Arial;
   text-decoration: none;
   background-color: #F80000;
@@ -65,6 +65,6 @@ hsidebar {
   border-radius: 5px;
 }
 
-.link_button:hover, .white_content a:hover  {
+.link_button:hover, .white_content a:hover, .make_button_link a:hover {
   color: white;
 }

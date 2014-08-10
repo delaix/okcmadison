@@ -3,9 +3,7 @@
     <tr><td><%= link_to 'Home', :pages_home %></td></tr>
     <tr><td><%= link_to 'About', :pages_about %></td></tr>
     <tr><td>
-      <a href = "javascript:void(0)" 
-        onclick = "document.getElementById('light').style.display='block';document.getElementById('fade'). style.display='block'">
-      Classes</a>
+      <%= render partial: 'layouts/class_link', :locals => {:content => "Classes"}%>
     </td></tr>
     <tr><td><%= link_to 'Blog', :pages_blog %></td></tr>
   </table>

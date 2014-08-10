@@ -29,7 +29,7 @@
     </ul>
   </p>
   <p>
-    <%= link_to 'Try a class today', :pages_classes %>. If you would like more information about training,
+    <%= render partial: 'layouts/class_link', :locals => {:content => "Try a class today."}%> If you would like more information about training,
     please send e-mail to <%= render "layouts/email" %>.
   </p>
 </div>
@@ -37,10 +37,7 @@
     <p>
       <iframe width="288" height="216" src="//www.youtube.com/embed/mOwFY5ADbsI?rel=0" frameborder="0" allowfullscreen></iframe>
     </p> 
-    <hsidebar>Contact</hsidebar>
-    <p>
-      <%= render "layouts/email" %>
-    </p>
+    <%= render "layouts/contact" %>
     <hsidebar>Instructor:</hsidebar>
     <%= image_tag "sensei.png", :size => "115x153" %>
     <p>
