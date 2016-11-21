@@ -15,4 +15,8 @@ class PagesController < ApplicationController
   def blog
     @location = :Blog
   end
+  
+  def practical
+  	@location = 'Practical Karate'
+  end
 end
